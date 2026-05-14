@@ -2,20 +2,17 @@
 //  ContentView.swift
 //  Diary
 //
-//  Created by からすす on 2025/12/15.
+//  Created by User on 2025/12/15.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var store = DiaryStore()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        HomeView()
+            .environmentObject(store)
     }
 }
 

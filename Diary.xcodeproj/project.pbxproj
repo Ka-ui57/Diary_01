@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		631C13862EF12F52009887AD /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 631C13852EF12F52009887AD /* GoogleGenerativeAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		631C131C2EEFD244009887AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		631C13252EEFD244009887AD /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		631C13802EF12771009887AD /* Exceptions for "Diary" folder in "Diary" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 631C130D2EEFD243009887AD /* Diary */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		631C13102EEFD243009887AD /* Diary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				631C13802EF12771009887AD /* Exceptions for "Diary" folder in "Diary" target */,
+			);
 			path = Diary;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631C13862EF12F52009887AD /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				631C13102EEFD243009887AD /* Diary */,
 				631C131E2EEFD244009887AD /* DiaryTests */,
 				631C13282EEFD244009887AD /* DiaryUITests */,
+				631C13842EF12F52009887AD /* Frameworks */,
 				631C130F2EEFD243009887AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				631C13252EEFD244009887AD /* DiaryUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		631C13842EF12F52009887AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = Diary;
 			packageProductDependencies = (
+				631C13852EF12F52009887AD /* GoogleGenerativeAI */,
 			);
 			productName = Diary;
 			productReference = 631C130E2EEFD243009887AD /* Diary.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 631C13052EEFD243009887AD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				631C13812EF12CFF009887AD /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 631C130F2EEFD243009887AD /* Products */;
 			projectDirPath = "";
@@ -403,7 +433,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Diary/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -412,12 +444,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "pro-01.Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,7 +471,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Diary/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -444,12 +482,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "pro-01.Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -573,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		631C13812EF12CFF009887AD /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		631C13852EF12F52009887AD /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 631C13812EF12CFF009887AD /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 631C13062EEFD243009887AD /* Project object */;
 }
