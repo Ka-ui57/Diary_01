@@ -10,7 +10,7 @@ import GoogleGenerativeAI
 
 class GeminiService {
     // In a production app, fetch this from a secure plist or environment variable/config.
-    private let apiKey = "AIzaSyAMpPucl6NIAJ8qrqknpJEM4B5HfZFNqU0"
+    private let apiKey = ""
     private let model: GenerativeModel
 
     init() {
